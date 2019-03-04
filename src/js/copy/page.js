@@ -67,6 +67,9 @@ $(window).resize(function () {
 });
 
 $(function () {
+
+
+    
     if ($('.splwo').length !== 0) {
         $('.splwo').each(function(i) {
             splitWords($(this));
