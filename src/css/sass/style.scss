@@ -3,18 +3,41 @@
 @import "repeat";
 .header{
     height: 104px; line-height: 24px;
-    .logo{ float: left; margin: (104px - 64px) / 2 0 0 (58 / 1920) * 100%; width: 483px; }
+    .logo{ float: left; margin: (104px - 64px) / 2 0 0 (58 / 1920) * 100%; width: 483px; 
+        .m{ display: none; }
+    }
     .nav{
-        float: right;
+        float: right; margin-right: (122 - 22) / 1920 * 100%;
         li{ float: left; position: relative;
-            > a{ display: block; padding: (104px - 24px) / 2 (44px / 2); font-size: 15px; 
-                &.act, &:hover{ background: $mc1; color: #fff; }
+            > a{ display: block; position: relative; padding: (104px - 24px) / 2 (44px / 2); font-size: 15px; 
+                &:before{ @include ba; z-index: 9; bottom: -3px + 10px; left: 50%; margin-left: -3px; width: 6px; height: 6px; background: #fff; transform: rotate(45deg); @include hide; @include mt4; }
+                &.act2, &.act, &:hover{ background: $mc1; color: #fff; }
+                &.act2:before{ bottom: -3px; @include show; }
             }
         }
     }
     .pull-nav{
         @include plr; top: 100%; padding: 15px 0; background: $mc1; display: none;
-        &:before{ @include ba; top: -3px; left: 50%; margin-left: -3px; width: 6px; height: 6px; background: #fff; transform: rotate(45deg);  }
-        a{ display: block; padding: 5px; text-align: center; line-height: 1.4; color: #fff; }
+        a{ display: block; padding: 5px; text-align: center; line-height: 1.4; color: #fff; 
+            &:hover{ background: $mc2; }
+        }
+    }
+}
+.menu-handler{
+    background: $mc1;
+    .burger{ background: #fff; }
+    &.active{
+        background: none;
+        .burger{ background: $mc1; }
+    }
+}
+.navMobile{
+    border-top: 10px solid $mc1; padding-top: 50px;
+    a{ display: block; padding-right: 15px; padding-left: 35px; line-height: 1.4; }
+    dd > a{ padding-top: 12px; padding-bottom: 12px; font-size: 18px; color: $fc1; 
+        &.act{ background: $mc1; color: #fff; }
+    }
+    .mtv{ background: $hc2; padding: 10px 0; display: none;
+        a{ padding-top: 6px; padding-bottom: 6px; font-size: 16px; }
     }
 }

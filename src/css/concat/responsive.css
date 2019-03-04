@@ -1,1 +1,40 @@
-
+@media screen and (max-width:1700px) {
+    .header .nav{ margin-right: 0; }
+}
+@media screen and (max-width:1600px) {
+    .header .logo{ margin-left: 2%; }
+    .header .nav li > a{ padding-left: 16px; padding-right: 16px; }
+}
+@media screen and (max-width:1440px) {
+    .mtop, .header{ height: 84px; }
+    .header .logo{ margin-top: 10px; }
+    .header .nav li > a{ padding: 30px 12px; }
+}
+@media screen and (max-width:1366px) {
+    .header .nav li>a{ font-size: 14px; padding-left: 10px; padding-right: 10px; }
+    .header .pull-nav{ width: 88px; left: 50%; margin-left: -44px; right: auto; }
+    .header .nav li > a.act, .header .nav li > a.act2, .header .nav li > a:hover{ background: none; color: #306ea7; }
+    .header .nav li > a.act2:before{ background: #306ea7; }
+    .header .nav{ margin-right: 2%; }
+}
+@media screen and (max-width:1280px) {
+    .header .nav li > a{ padding-left: 8px; padding-right: 8px; }
+}
+@media screen and (max-width:1240px) {
+    .header .logo > img{ display: none; }
+    .header .logo .m{ display: block; }
+    .header .logo{ width: 115px; margin-top: 16px; }
+}
+@media screen and (max-width:1024px) {
+    .header, .mtop{ height: 60px; }
+    .menu-handler, .header .logo > img{ display: block; }
+    .header .logo .m{ display: none; }
+    .header .logo{ width: 483px; margin: -2px 0 0 5%; transform-origin: left center; transform: scale(.7); }
+    .header .nav{ display: none; }
+}
+@media screen and (max-width:481px) {
+    .navMobile dd > a{ font-size: 16px; padding-top: 10px; padding-bottom: 10px; }
+    .navMobile .mtv a{ font-size: 14px; padding-top: 4px; padding-bottom: 4px; }
+    .navMobile{ border-width: 5px; padding-top: 55px; }
+    .header .logo{ transform: scale(.5); }
+}

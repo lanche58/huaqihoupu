@@ -67,6 +67,24 @@ $(window).resize(function () {
 });
 
 $(function () {
+    $('.nav li>a').mouseenter(function() {
+        var $next = $(this).next('.pull-nav'),
+            nextLen = $next.length;
+        if (nextLen) {
+            $(this).addClass('act2');
+            $next.stop().slideDown();
+        }
+    });
+
+    $('.nav li').mouseleave(function() {
+        var $a = $(this).find('a'),
+            _act = $a.hasClass('act2'),
+            $next = $(this).find('.pull-nav');
+        if (_act) {
+            $a.removeClass('act2');
+            $next.stop().slideUp();
+        }
+    });
 
 
     
