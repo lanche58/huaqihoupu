@@ -280,3 +280,197 @@
         border-color: #306ea7; }
       .banner-video:hover .sj {
         color: #306ea7; } }
+
+.hot-news {
+  width: 66.7%;
+  float: left; }
+  .hot-news .ix-ti {
+    margin-bottom: 22px; }
+
+.hot-news-list {
+  background: #306ea7; }
+  .hot-news-list .item > a {
+    display: block;
+    overflow: hidden;
+    color: #fff; }
+    @media screen and (min-width: 1025px) {
+      .hot-news-list .item > a:hover .view-more {
+        background: #fff;
+        color: #306ea7; } }
+  .hot-news-list .picbox {
+    width: 62%;
+    float: left; }
+  .hot-news-list .pai {
+    padding-bottom: 80.18868%; }
+    .hot-news-list .pai:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: url(../images/shadow.png) repeat-x left bottom; }
+  .hot-news-list .txts {
+    padding: 55px 25px 0 25px;
+    overflow: hidden; }
+  .hot-news-list .date {
+    margin-bottom: 20px;
+    font-size: 12px; }
+  .hot-news-list .nowti {
+    padding-bottom: 14px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #fff;
+    font-size: 18px; }
+  .hot-news-list .tx {
+    margin-bottom: 50px;
+    height: 96px; }
+  .hot-news-list .slick-dots {
+    right: auto;
+    bottom: 20px;
+    width: 62%; }
+    .hot-news-list .slick-dots li {
+      background: #fff; }
+      @media screen and (min-width: 1025px) {
+        .hot-news-list .slick-dots li:hover {
+          background: #306ea7; } }
+    .hot-news-list .slick-dots .slick-active {
+      background: #306ea7; }
+
+.btn {
+  display: inline-block;
+  vertical-align: bottom;
+  box-sizing: border-box;
+  transition: 300ms; }
+
+.view-more {
+  width: 118px;
+  border: 1px solid #fff;
+  line-height: 26px;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 12px; }
+
+.ix-ti {
+  line-height: 1.4;
+  font-size: 16px;
+  color: #333; }
+  .ix-ti:before {
+    content: "";
+    margin: 0 15px 5px 0;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    border: 3px solid #306ea7;
+    box-sizing: border-box; }
+
+.ix-news {
+  float: right;
+  width: 30.4%; }
+  .ix-news .in-nav {
+    margin-bottom: 40px; }
+
+.in-nav li {
+  float: left;
+  cursor: pointer; }
+  .in-nav li + li {
+    margin-left: 40px; }
+  .in-nav li.act .ix-ti {
+    color: #306ea7; }
+  @media screen and (min-width: 1025px) {
+    .in-nav li:hover .ix-ti {
+      color: #306ea7; } }
+
+.in-list a {
+  display: block;
+  line-height: 36px;
+  color: #333;
+  overflow: hidden; }
+  @media screen and (min-width: 1025px) {
+    .in-list a:hover {
+      color: #306ea7; } }
+
+.in-list .date {
+  float: right;
+  margin-left: 20px;
+  color: #999;
+  font-size: 12px; }
+
+.in-list .nowti {
+  line-height: 36px; }
+  .in-list .nowti:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    width: 4px;
+    height: 4px;
+    background: #999; }
+
+.in-list li {
+  display: none; }
+
+.ix1 {
+  padding: 55px 0 80px 0; }
+
+.pbg {
+  background: #f2f2f2; }
+
+.ix-link-list li {
+  width: 33.33%;
+  float: left; }
+  .ix-link-list li + li a {
+    border-bottom: 1px solid #e5e5e5; }
+
+.ix-link-list a {
+  display: block;
+  background: #fff;
+  border-right: 1px solid #e5e5e5; }
+
+.ix-link-list .pai {
+  padding-bottom: 54.7619%; }
+
+.ix-link-list .txts {
+  height: 132px;
+  padding: 20px 30px 0 30px;
+  box-sizing: border-box; }
+
+.ix-link-list .nowti {
+  margin-bottom: 13px;
+  color: #306ea7;
+  font-size: 18px; }
+
+.ix-link-list .tx {
+  height: 48px; }
+
+.ix-link-list .about {
+  height: 366px;
+  padding: 40px 30px 0 30px;
+  background: url(../images/bg.jpg) no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  color: #c5dae5; }
+  .ix-link-list .about .nowti {
+    color: #fff; }
+  .ix-link-list .about .tx {
+    height: 72px; }
+
+.ia-nums {
+  color: #fff;
+  overflow: hidden; }
+  .ia-nums p {
+    width: 50%;
+    float: left;
+    margin-top: 30px;
+    line-height: 1; }
+  .ia-nums span {
+    display: block;
+    margin-top: 5px; }
+  .ia-nums i {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 46px; }
+
+.ix3 {
+  padding: 80px 0; }
