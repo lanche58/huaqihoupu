@@ -56,6 +56,9 @@
       .header .pull-nav a:hover {
         background: #629ED6; }
 
+.mtop {
+  height: 104px; }
+
 .menu-handler {
   background: #306ea7; }
   .menu-handler .burger {
@@ -193,3 +196,87 @@
     @media screen and (max-width: 601px) {
       .pnav li + li {
         margin-left: 16vw; } }
+
+.banner .slick-dots {
+  bottom: 40px; }
+  .banner .slick-dots li {
+    border: 3px solid #fff;
+    background: none;
+    cursor: pointer; }
+    @media screen and (min-width: 1025px) {
+      .banner .slick-dots li:hover {
+        background: #fff; } }
+  .banner .slick-dots .slick-active {
+    background: #fff; }
+
+.banner .txts {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 0;
+  bottom: 0;
+  color: #fff; }
+  .banner .txts .ch {
+    font-size: 80px;
+    font-weight: bold; }
+  .banner .txts .en {
+    position: relative;
+    margin-top: 10px;
+    padding-top: 15px;
+    text-transform: uppercase;
+    font-size: 24px; }
+    .banner .txts .en:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -72px;
+      width: 144px;
+      height: 1px;
+      background: #fff; }
+
+.banner-video {
+  position: absolute;
+  z-index: 199;
+  bottom: 30px;
+  right: 50px;
+  width: 168px;
+  background: #fff;
+  cursor: pointer;
+  transition: 300ms; }
+  .banner-video .pai {
+    border: 2px solid #fff;
+    padding-bottom: 51.19048%;
+    transition: 300ms; }
+    .banner-video .pai:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: url(../images/black5.png); }
+  .banner-video .sj {
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    top: 50%;
+    margin: -8px 0 0 -7px;
+    border-top-width: 8px;
+    border-bottom-width: 8px;
+    border-left-width: 14px;
+    color: #fff;
+    transition: 300ms; }
+  .banner-video .nowti {
+    padding: 0 5%;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px; }
+  @media screen and (min-width: 1025px) {
+    .banner-video:hover {
+      background: #306ea7;
+      color: #fff; }
+      .banner-video:hover .pai {
+        border-color: #306ea7; }
+      .banner-video:hover .sj {
+        color: #306ea7; } }

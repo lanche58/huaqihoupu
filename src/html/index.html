@@ -5,38 +5,71 @@
     "index": "act"
 })
 <div class="banner-box">
-    <div class="banner cg-s banner-arrow u-slick">
+    <div class="banner cg-s u-slick">
         <div class="item">
-            <div class="pic2"><img src="img/banner_1.jpg" alt=""></div>
+            <div class="pic2"><img src="img/banner1.jpg" alt=""></div>
             <div class="txts tac">
-                <div class="pw">
-                    <h2 class="ch trans transY">坚持文化传承与创新<i class="chapter"></i><br>以高标准、严要求将工作做到至善至美</h2>
-                    <h3 class="en trans transY dly-1">Adhere to cultural heritage and innovation.<br>With high standards and strict demands, we will do our best to the best.</h3>
-                    <div class="more trans transY dly-2"><a href="about1.html" class="btn ab-more">了解更多</a></div>
+                <div class="tb">
+                    <div class="tbc">
+                        <h2 class="ch splwo fadeIn">以德胜者 行稳致远</h2>
+                        <h3 class="en">huaqi houpu group</h3>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="item">
-            <div class="pic2"><img src="img/banner_1.jpg" alt=""></div>
+            <div class="pic2"><img src="img/banner2.jpg" alt=""></div>
             <div class="txts tac">
-                <div class="pw">
-                    <h2 class="ch trans transY">坚持文化传承与创新<i class="chapter"></i><br>以高标准、严要求将工作做到至善至美</h2>
-                    <h3 class="en trans transY dly-1">Adhere to cultural heritage and innovation.<br>With high standards and strict demands, we will do our best to the best.</h3>
-                    <div class="more trans transY dly-2"><a href="about1.html" class="btn ab-more">了解更多</a></div>
+                <div class="tb">
+                    <div class="tbc">
+                        <h2 class="ch splwo fadeIn">以德胜者 行稳致远</h2>
+                        <h3 class="en">huaqi houpu group</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="pic2"><img src="img/banner3.jpg" alt=""></div>
+            <div class="txts tac">
+                <div class="tb">
+                    <div class="tbc">
+                        <h2 class="ch splwo fadeIn">厚德载物 普惠天下</h2>
+                        <h3 class="en">huaqi houpu group</h3>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- banner -->
-    <p class="banner-num"><span class="cnum">01</span>&nbsp;/&nbsp;<span class="anum">01</span></p>
-    <div class="banner-line"><span id="line"></span></div>
+    <div class="banner-video scapic vi-btn" data-video-image="img/ix_i1.jpg" data-video-url="img/video.mp4">
+        <div class="pai"><img src="img/ix_i1.jpg" alt=""><i class="sj sj-r"></i></div>
+        <h3 class="nowti">企业宣传视频</h3>
+    </div>
 </div>
 <!-- banner-box -->
 <div class="container">
-    
+    <div class="ix1 pw">
+        <div class="hot-news-list">
+            <div class="item"><a href="news-detail.html">
+                <div class="picbox"><div class="pai"><img src="img/ix_i2.jpg" alt=""></div></div>
+                <div class="txts">
+                    <p class="date">2019年，02月01日</p>
+                </div>
+            </a></div>
+        </div>
+    </div>
 </div>
 <!-- container -->
+<div class="vwrap">
+    <div class="videobtg"></div>
+    <div class="videobox">
+        <div id="videobox"></div>
+        <div class="close"><i></i></div>
+    </div>
+</div>
+<!--vwrap-->
 @@include('./footer.html')
+<script src="js/video/player.mini.js"></script>
 <script src="js/page.js"></script>
 <script>
     function indexBox() {
@@ -65,7 +98,7 @@
         $('#line').css({width:0}).stop().animate({width:100+'%'},4800,'linear');
         $('.banner').slick({
             speed: 1000,
-            arrows: true,
+            arrows: false,
             dots: true,
             autoplay: true,
             autoplaySpeed: 5000,
