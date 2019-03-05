@@ -48,16 +48,16 @@ function pageBox() {
         });
     }
 
-    var pbalen = $('.pbanner').size();
-    if (pbalen) {
-        if (!isMobile) {
-            $('.pbanner').css({height: w_height - $mtoph});
-            setImgMax($('.pbanner .pic2'), 1920, 900, w_width, w_height - $mtoph);
-        } else {
-            $('.pbanner').css({height: 'auto'});
-            $('.pbanner .pic2').attr({style: ''});
-        }
-    } 
+    // var pbalen = $('.pbanner').size();
+    // if (pbalen) {
+    //     if (!isMobile) {
+    //         $('.pbanner').css({height: w_height - $mtoph});
+    //         setImgMax($('.pbanner .pic2'), 1920, 900, w_width, w_height - $mtoph);
+    //     } else {
+    //         $('.pbanner').css({height: 'auto'});
+    //         $('.pbanner .pic2').attr({style: ''});
+    //     }
+    // } 
 };
 
 pageBox();

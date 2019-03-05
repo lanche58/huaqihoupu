@@ -92,7 +92,7 @@ a {
 	}
 }
 /* pw */
-.pw { width: 1200px; margin: 0 auto; }
+.pw { width: 1280px; margin: 0 auto; }
 @media screen and (max-width:1366px) {
 	.pw { width: 1000px; }
 }
@@ -416,7 +416,11 @@ a {
 	0% { transform: translateY(-10%); opacity: 1; }
 	100% { transform: translateY(10%); opacity: 0; }
 } /* animation: tbfade 1.8s 0.2s infinite linear; */
-
+@keyframes fadeIn{
+    0%{opacity:0}
+    100%{opacity:1}
+}
+.active .fadeIn i{-webkit-animation:fadeIn 1s both;-moz-animation:fadeIn 1s both;animation:fadeIn 1s both}
 /* animation end */
 @media screen and (min-width:1025px){
 .gray img { filter: grayscale(100%); }

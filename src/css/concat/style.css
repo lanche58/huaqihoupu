@@ -89,3 +89,107 @@
       padding-top: 6px;
       padding-bottom: 6px;
       font-size: 16px; }
+
+.footer {
+  background: #333;
+  padding: 50px 0;
+  font-size: 12px;
+  line-height: 24px;
+  color: #999; }
+  .footer a {
+    color: #999; }
+    @media screen and (min-width: 1025px) {
+      .footer a:not(.na):hover {
+        color: #306ea7; } }
+  .footer .foo-links {
+    margin-bottom: 5px; }
+  .footer .l {
+    padding-top: 30px; }
+
+.foo-links {
+  font-size: 14px; }
+  .foo-links a {
+    color: #fff; }
+
+.foo-ma {
+  width: 85px; }
+  .foo-ma .icon {
+    margin-top: 6px;
+    background: #306ea7;
+    color: #fff;
+    font-size: 12px;
+    text-align: center; }
+    .foo-ma .icon:before {
+      font-size: 14px;
+      margin-right: 4px; }
+
+.pbanner {
+  color: #fff; }
+  .pbanner a {
+    color: #fff; }
+  .pbanner .txts {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5%;
+    right: 5%;
+    text-align: center; }
+  .pbanner .ch {
+    font-size: 50px;
+    font-weight: bold; }
+  .pbanner .en {
+    margin-top: 10px;
+    font-size: 24px;
+    text-transform: uppercase; }
+
+.pnav {
+  height: 60px;
+  border-bottom: 1px solid #f2f2f2;
+  line-height: 24px; }
+  @media screen and (max-width: 1024px) {
+    .pnav {
+      position: relative;
+      overflow: hidden;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch; } }
+  @media screen and (max-width: 641px) {
+    .pnav {
+      height: 50px; } }
+  @media screen and (max-width: 1024px) {
+    .pnav ul {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0 5%;
+      white-space: nowrap;
+      min-width: 100%;
+      box-sizing: border-box; } }
+  .pnav a {
+    display: block;
+    padding: 18px 0;
+    color: #999; }
+    @media screen and (max-width: 641px) {
+      .pnav a {
+        padding: 13px 0; } }
+    .pnav a:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 8px;
+      width: 12px;
+      height: 12px;
+      border-radius: 100%;
+      border: 3px solid #f2f2f2;
+      box-sizing: border-box;
+      transition: 300ms; }
+    @media screen and (min-width: 1025px) {
+      .pnav a.act:before, .pnav a:hover:before {
+        border-color: #306ea7; } }
+  .pnav li + li {
+    margin-left: 116px; }
+    @media screen and (max-width: 1366px) {
+      .pnav li + li {
+        margin-left: 96px; } }
+    @media screen and (max-width: 601px) {
+      .pnav li + li {
+        margin-left: 16vw; } }

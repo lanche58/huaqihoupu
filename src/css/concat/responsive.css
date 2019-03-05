@@ -32,9 +32,22 @@
     .header .logo{ width: 483px; margin: -2px 0 0 5%; transform-origin: left center; transform: scale(.7); }
     .header .nav{ display: none; }
 }
+@media screen and (max-width:861px) {
+    .footer .l{ float: none; padding-top: 0; }
+    .footer .r{ display: none; }
+    .pbanner .ch{ font-size: 40px; }
+    .pbanner .en{ margin-top: 8px; font-size: 20px; }
+}
+@media screen and (max-width:601px) {
+    .footer{ padding: 8.33vw 0; }
+    .pbanner .ch{ font-size: 32px; }
+    .pbanner .en{ margin-top: 1.33vw; font-size: 16px; }
+}
 @media screen and (max-width:481px) {
     .navMobile dd > a{ font-size: 16px; padding-top: 10px; padding-bottom: 10px; }
     .navMobile .mtv a{ font-size: 14px; padding-top: 4px; padding-bottom: 4px; }
     .navMobile{ border-width: 5px; padding-top: 55px; }
     .header .logo{ transform: scale(.5); }
+    .pbanner .ch{ font-size: 26px; }
+    .pbanner .en{ font-size: 13px; }
 }
