@@ -119,6 +119,7 @@
             &:before{ @include ba; top: 0; left: 50%; margin-left: -(144px / 2); width: 144px; height: 1px; background: #fff; }
         }
     }
+    .pic2{ position: absolute; top: 0; left: 0; }
 }
 .banner-video{
     position: absolute; z-index: 199; bottom: 30px; right: 50px; width: 168px; background: #fff; cursor: pointer; @include mt3;
@@ -204,7 +205,13 @@
     li{ width: 33.33%; float: left; 
         + li a{ border-bottom: 1px solid $hc2; }
     }
-    a{ display: block; background: #fff; border-right: 1px solid $hc2; }
+    a{ display: block; background: #fff; border-right: 1px solid $hc2; 
+        @media screen and (min-width:1025px) {
+            &:hover{
+                transform: translateY(-20px);
+            }
+        }
+    }
     .pai{ padding-bottom: (230 / 420) * 100%; }
     .txts{ height: 132px; padding: 20px 30px 0 30px; @include bs; }
     .nowti{ margin-bottom: 24px - 11px; color: $mc1; font-size: 18px; }
@@ -221,3 +228,54 @@
     i{ margin-right: 10px; font-weight: bold; font-size: 46px; }
 }
 .ix3{ padding: 80px 0; }
+.ix-community{
+    a{ display: block; position: relative; padding-top: 55px; height: 188px; background: url(../img/ix_bg1.jpg) no-repeat center; @include bs; color: #fff; text-align: center;
+        &:before{ @include ba; top: 25px; bottom: 25px; right: 25px; left: 25px; border: 1px solid #fff; border-color: rgba(255,255,255,.4); @include mt3; }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                &:before{ border-color: rgba(255,255,255,.8); }
+                .icon{ transform: translateX(10px); }
+            }
+        }
+    }
+    .nowti{ margin-bottom: 17px - 5px; font-weight: bold; font-size: 26px; }
+    .icon{ @include di; @include c(26px); border: 2px solid #fff; font-size: 14px; line-height: 26px; @include mt3; }
+}
+.ix4{ padding: 60px 0; }
+.ip-imgs{
+    .item > a{ display: block; position: relative; color: #fff; }
+    .pai{ padding-bottom: (550 / 1920) * 100%;  }
+    .slick-dots{ display: none !important; }
+    .nowti{ @include plr; bottom: 0; padding: 0 35% 0 5%; line-height: 50px; font-size: 16px; @include b5; display: none; }
+}
+.ix2{ position: relative; 
+    .ip-title{ position: absolute; top: 40px; left: 0; right: 0; z-index: 196; color: #fff; 
+        .b{ float: left; margin-right: (117 / 1280) * 100%; }
+        .logo{ float: left; margin-top: 10px;
+            .m{ display: none; }
+        }
+    }
+}
+.ip-nav{
+    position: absolute; z-index: 200; top: 0; bottom: 0; right: 50%; margin-right: -(1280px / 2); width: 430px; 
+    a{ color: #fff; 
+        &.act{
+            .tbc:before{ @include hvh; }
+            .icon{ transform: none; @include show; }
+        }
+    }
+    li{ height: 16.66%; @include bs; @include b5; background: rgba(0,0,0,.4); 
+        + li{ border-top: 1px solid #fff; border-color: rgba(255,255,255,.2); }
+    }
+    .tbc{ position: relative; z-index: 1; padding: 0 80px 0 40px; 
+        &:before{ z-index: -1; @include hv(#fff, 100%); background: url(../images/bg.png); }
+    }
+    .nowti{ line-height: 50px; font-size: 18px; }
+    .ico{ @include di; width: 50px; height: 50px; background-position: left center; }
+    .icon{ position: absolute; right: 35px; top: 50%; margin-top: -(26px / 2); @include c(26px); background: #fff; color: $mc1; text-align: center; font-size: 12px; line-height: 26px; transform: translateX(-100%); @include hide; @include mt4; }
+}
+.ip-title{
+    .ch{ font-size: 24px; font-weight: bold; }
+    .en{ margin-top: 20px; font-size: 18px; }
+    .b{ border-left: 1px solid #fff; padding-left: 15px; }
+}

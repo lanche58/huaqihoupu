@@ -235,6 +235,11 @@
       height: 1px;
       background: #fff; }
 
+.banner .pic2 {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
 .banner-video {
   position: absolute;
   z-index: 199;
@@ -427,6 +432,9 @@
   display: block;
   background: #fff;
   border-right: 1px solid #e5e5e5; }
+  @media screen and (min-width: 1025px) {
+    .ix-link-list a:hover {
+      transform: translateY(-20px); } }
 
 .ix-link-list .pai {
   padding-bottom: 54.7619%; }
@@ -474,3 +482,168 @@
 
 .ix3 {
   padding: 80px 0; }
+
+.ix-community a {
+  display: block;
+  position: relative;
+  padding-top: 55px;
+  height: 188px;
+  background: url(../img/ix_bg1.jpg) no-repeat center;
+  box-sizing: border-box;
+  color: #fff;
+  text-align: center; }
+  .ix-community a:before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    bottom: 25px;
+    right: 25px;
+    left: 25px;
+    border: 1px solid #fff;
+    border-color: rgba(255, 255, 255, 0.4);
+    transition: 300ms; }
+  @media screen and (min-width: 1025px) {
+    .ix-community a:hover:before {
+      border-color: rgba(255, 255, 255, 0.8); }
+    .ix-community a:hover .icon {
+      transform: translateX(10px); } }
+
+.ix-community .nowti {
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 26px; }
+
+.ix-community .icon {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  font-size: 14px;
+  line-height: 26px;
+  transition: 300ms; }
+
+.ix4 {
+  padding: 60px 0; }
+
+.ip-imgs .item > a {
+  display: block;
+  position: relative;
+  color: #fff; }
+
+.ip-imgs .pai {
+  padding-bottom: 28.64583%; }
+
+.ip-imgs .slick-dots {
+  display: none !important; }
+
+.ip-imgs .nowti {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 35% 0 5%;
+  line-height: 50px;
+  font-size: 16px;
+  background: url(../images/black5.png);
+  display: none; }
+
+.ix2 {
+  position: relative; }
+  .ix2 .ip-title {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 196;
+    color: #fff; }
+    .ix2 .ip-title .b {
+      float: left;
+      margin-right: 9.14063%; }
+    .ix2 .ip-title .logo {
+      float: left;
+      margin-top: 10px; }
+      .ix2 .ip-title .logo .m {
+        display: none; }
+
+.ip-nav {
+  position: absolute;
+  z-index: 200;
+  top: 0;
+  bottom: 0;
+  right: 50%;
+  margin-right: -640px;
+  width: 430px; }
+  .ip-nav a {
+    color: #fff; }
+    .ip-nav a.act .tbc:before {
+      top: 0;
+      bottom: auto;
+      height: 100%; }
+    .ip-nav a.act .icon {
+      transform: none;
+      opacity: 1;
+      visibility: visible; }
+  .ip-nav li {
+    height: 16.66%;
+    box-sizing: border-box;
+    background: url(../images/black5.png);
+    background: rgba(0, 0, 0, 0.4); }
+    .ip-nav li + li {
+      border-top: 1px solid #fff;
+      border-color: rgba(255, 255, 255, 0.2); }
+  .ip-nav .tbc {
+    position: relative;
+    z-index: 1;
+    padding: 0 80px 0 40px; }
+    .ip-nav .tbc:before {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      top: auto;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 0;
+      background: #fff;
+      transition: 400ms;
+      background: url(../images/bg.png); }
+  .ip-nav .nowti {
+    line-height: 50px;
+    font-size: 18px; }
+  .ip-nav .ico {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 50px;
+    height: 50px;
+    background-position: left center; }
+  .ip-nav .icon {
+    position: absolute;
+    right: 35px;
+    top: 50%;
+    margin-top: -13px;
+    width: 26px;
+    height: 26px;
+    border-radius: 100%;
+    background: #fff;
+    color: #306ea7;
+    text-align: center;
+    font-size: 12px;
+    line-height: 26px;
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms; }
+
+.ip-title .ch {
+  font-size: 24px;
+  font-weight: bold; }
+
+.ip-title .en {
+  margin-top: 20px;
+  font-size: 18px; }
+
+.ip-title .b {
+  border-left: 1px solid #fff;
+  padding-left: 15px; }
