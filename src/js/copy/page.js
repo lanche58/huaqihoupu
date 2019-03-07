@@ -350,43 +350,44 @@ function splitWords(el) {
     }
 };
 
-$(document).on('click','.overlayClose',function(){
-    $('.imgShowBox').removeClass('img-show');
-   jQuery('html').removeClass('openImg');
-   setTimeout(function () { jQuery('.imgShowBox').remove(); }, 800);
+$(document).on(_click, '.imgShowBox .close', function() {
+    $('.imgShowBox').removeClass('show');
+    setTimeout(function () { jQuery('.imgShowBox').remove(); }, 800);
 }); 
-function openshowImg(num,maxnum) {
-    $('html').addClass('openImg');
-    jQuery("body").append('<div class="imgShowBox"><ul class="imgstools clearfix"><li><div class="imgPrev"></div></li><li><div class="snumBox"><span class="actnum">0</span>/<span class="allnum">0</span></div></li><li><div class="imgNext"></div></li><li class="lastItem"><a class="overlayClose"><i></i></a></li></ul><div class="imgShowDemo"></div></div>');
-    $(".imgstools .snumBox .actnum").html(num);
-    $(".imgstools .snumBox .allnum").html(maxnum);
-    for(var i = 1 ; i <= maxnum ; i++){
-        $('.imgShowDemo').append('<div class="item"><div class="txt"><div class="i"></div></div><img src="" class="img"/></div>');
-        var imgurl = $("[data-big-num="+i+"]").attr('data-img');
-        var imgtitle = $("[data-big-num="+i+"]").attr('data-title');
-        $('.imgShowDemo .item').eq(i-1).find(".img").attr("src",imgurl);
-        $('.imgShowDemo .item').eq(i-1).find('.i').html(imgtitle);	
+function openshowImg(num, maxnum, obj) {
+    $('body').append('<div class="imgShowBox"><div class="top-bar"><div class="close icon iconfont icon-guanbi"></div><div class="counter"><span class="curr">1</span>&nbsp;/&nbsp;<span class="total">1</span></div></div><div class="prev arrow icon iconfont icon-xia"></div><div class="next arrow icon icon iconfont icon-forward"></div><div class="imgShowDemo u-slick"></div></div>');
+
+    $('.imgShowBox .counter .curr').html(num);
+    $('.imgShowBox .counter .total').html(maxnum);
+
+    for (var i = 1; i <= maxnum; i++) {
+		$('.imgShowDemo').append('<div class="item"><img src="" alt="" class="img"><p class="text"></p></div>');
+		var imgurl = obj.find("[data-big-num=" + i + "]").attr('data-big-img');
+		var imgtitle = obj.find("[data-big-num=" + i + "]").attr('data-title');
+		$('.imgShowDemo .item').eq(i-1).find(".img").attr("src", imgurl);
+		$('.imgShowDemo .item').eq(i-1).find('.text').html(imgtitle);	
     }
-    $(".imgShowBox").css({ height: w_height });
-    $('.imgShowDemo').css({ height: w_height,width: w_width });
-    $('.imgShowDemo .item').css({ height: w_height });
-    
-    jQuery(window).resize(function(){
-        $(".imgShowBox").css({ height: w_height });
-        $('.imgShowDemo').css({ height: w_height,width: w_width });
-        $('.imgShowDemo .item').css({ height: w_height });
+
+    $('.imgShowDemo .item').css({height: w_height});
+    $(window).resize(function() {
+        $('.imgShowDemo .item').css({height: w_height});
     });
-    var imgowl=$('.imgShowDemo').slick({fade:true,arrows:false}).on('beforeChange', function(event, slick, currentSlide, nextSlide){
-        $(".imgstools .snumBox .actnum").html(nextSlide+1);
+   
+	$('.imgShowDemo').slick({
+        fade: true,
+        arrows: false
+    }).on('beforeChange', function(event, slick, currentSlide, nextSlide){
+		$('.imgShowBox .counter .curr').html(nextSlide+1);
     });
-    $('.imgstools .imgPrev').click(function(e){
-        e.preventDefault();
-        imgowl.slick('slickPrev');
+
+    $('.imgShowBox .prev').bind(_click, function() {
+        $('.imgShowDemo').slick('slickPrev');
     });
-    $('.imgstools .imgNext').click(function(e){
-        e.preventDefault();
-        imgowl.slick('slickNext');
+
+    $('.imgShowBox .next').bind(_click, function() {
+        $('.imgShowDemo').slick('slickNext');
     });
-    $('.imgShowDemo').slick('slickGoTo',num-1);
-    $('.imgShowBox').addClass('img-show');
-}; 
+
+    $('.imgShowDemo').slick('slickGoTo', num-1);
+  	$('.imgShowBox').addClass('show');
+}
