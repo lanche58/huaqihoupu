@@ -79,7 +79,7 @@
     }
     ul{
         @media screen and (max-width:1024px) {
-            position: absolute; top: 0; left: 0; padding: 0 5%; white-space: nowrap; min-width: 100%; @include bs;
+            position: absolute; top: 0; left: 5%; padding-right: 5%; white-space: nowrap; min-width: 100%; @include bs;
         }  
     }
     a{ display: block; padding: (60px - 24px) / 2 0; color: $fc3; 
@@ -485,4 +485,129 @@
             &:hover{ background: $fc2; }
         }
     }
+}
+.news-list{
+    margin-left: -20px;
+    li{ width: 33.33%; float: left; margin-bottom: 20px; }
+    a{ display: block; position: relative; background: #fff; margin-left: 20px; 
+        &:before{ @include hl($mc1, 10px); }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                &:before{ @include hlw; }
+                .news-date{ background: $mc1; }
+                .nowti{ color: $mc1; }
+            }
+        }
+    }
+    .pai{ padding-bottom: (230 / 387) * 100%; }
+    .news-date{ position: absolute; top: 0; left: 20px; }
+    .txts{ height: 180px; padding: 25px 20px 0 20px; @include bs; overflow: hidden; }
+    .nowti{ font-size: 18px; color: $fc1; @include mt3; }
+    .tx{ margin-top: 7px; height: 24px * 2; }
+    .more{ display: block; margin-top: 30px; font-size: 12px; line-height: 20px; overflow: hidden; }
+    .icon{ float: right; font-size: 24px; }
+}
+.news-date{
+    width: 58px; height: 58px; padding-top: 11px - 3px; background: $hc1; color: #fff; line-height: 1; text-align: center; font-size: 12px; @include bs; @include mt3;
+    span{ display: block; }
+    .d{ font-size: 28px; }
+}
+.ab6 .news-list{ margin-bottom: 40px; }
+.notice-list{
+    margin-left: -30px;
+    li{ width: 50%; float: left; margin-bottom: 30px; }
+    a{ display: block; height: 175px; padding: 30px 35px 0 35px; background: #fff; margin-left: 30px; @include bs; overflow: hidden; 
+        @media screen and (min-width:1025px) {
+            &:hover{
+                background: $mc1; color: #fff;
+                .ti{ color: #fff; }
+                .more{ padding-right: 30px; }
+                .icon{ @include show; transform: none; }
+            }
+        }
+    }
+    .pic{ width: 150px; float: left; margin-right: 35px; }
+    .txts{ overflow: hidden; }
+    .ti{ font-size: 18px; color: $fc1; height: 50px; margin-bottom: 44px - 12px; overflow: hidden; @include mt3; }
+    .clearfix{ line-height: 20px; }
+    .date{ float: left; font-style: italic; }
+    .more{ float: right; position: relative; padding-right: 0; transition: padding 300ms; }
+    .icon{ display: block; position: absolute; top: 0; right: 0; font-size: 22px; transform: translateX(-10px); @include hide; transition: transform 300ms, opacity 300ms, visibility 300ms; }
+}
+.ab6 .notice-list{ margin-bottom: 30px; }
+.nd-pw{ margin: 0 auto; width: 1000px; }
+.nd-t{
+    border-bottom: 10px solid $mc1; position: relative; padding: 130px 0 80px 0;
+    .sj{ position: absolute; top: 100%; left: 50%; margin: 10px 0 0 -10px; color: $mc1; border-left-width: 10px; border-right-width: 10px; border-top-width: 12px; }
+    .ti{ margin-bottom: 15px; font-weight: bold; color: $fc1; font-size: 30px; }
+    .fib{ line-height: 24px; color: $fc3; }
+    .ib + .ib{ margin-left: 35px; }
+}
+.share{
+    p{ float: left; margin-right: 2px; }
+    a{ background: none !important; line-height: 24px !important; height: auto !important; font-size: 22px !important; color: $fc3 !important; opacity: 1 !important;
+        + a{ margin-left: 12px !important; }
+        @media screen and (min-width:1025px) {
+            &:hover{ color: $mc1 !important; }
+        }
+    }
+}
+.nd-b{ padding: 80px 0 100px 0; 
+    .nd-back{ margin-top: 60px; }
+}
+.nd-back{
+    height: 60px;
+    .icon{ position: fixed; z-index: 299; top: 50%; margin-top: -(52px / 2); @include c(52px); line-height: 52px; font-size: 18px; font-weight: bold; }
+    a{ display: block; background: $hc1; text-align: center; color: #fff; 
+        @media screen and (min-width:1025px) {
+            &:hover{
+                background: $mc1; color: #fff;
+            }
+        }
+    }
+    .back{ width: 160px; margin: 0 auto; line-height: 60px; }
+    .icon-xiangzuojiantou{ left: (88 / 1920) * 100%; }
+    .icon-xiangyoujiantou{ right: (88 / 1920) * 100%; }
+}
+.pd-t{
+    padding: 0 0 100px 0 !important;
+    .t{ background: $mc1; padding: 130px 0 80px 0; color: #fff; 
+        .fib, .ti{ color: #fff; }
+        .share a{ color: #fff !important; 
+            @media screen and (min-width:1025px) {
+                &:hover{ opacity: .7 !important; }
+            } 
+        }
+    }
+    .pd-imgs{ margin-top: 100px; }
+}
+.pd-imgs{
+    overflow: visible;
+    .pai{ padding-bottom: (600 / 1000) * 100%; }
+    .slick-prev{ left: -140px; }
+    .slick-next{ right: -140px; }
+    .slick-dots{ display: none !important; }
+}
+.pd-arrow{
+    .slick-arrow{ top: 50%; margin-top: -(52px / 2); @include c(52px); background: $hc1; line-height: 52px; font-weight: bold; font-size: 18px; color: #fff; 
+        @media screen and (min-width:1025px) {
+            &:hover{ background: $mc1; }
+        }
+    }
+}
+.pd-back{
+    height: auto; padding: 30px 0;
+    a{ background: #fff; line-height: 60px; color: $fc3; }
+    .back{ float: right; }
+    .arrow{ float: left; width: 120px; margin-right: 15px; }
+}
+.nd-b{
+    .ti{ font-weight: bold; color: $fc1; font-size: 30px; }
+    .func-table{ margin-top: 30px; }
+}
+.func-table{
+    table{ width: 100%; }
+    th, td{ border: 1px solid $hc1; padding: 25px; }
+    th{ width: 12%; background: $hc3; font-weight: normal; text-align: center; }
+    td{ width: 38%; }
 }

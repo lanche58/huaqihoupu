@@ -1,0 +1,87 @@
+@@include('./top.html')
+</head>
+<body>
+@@include('./header.html',{
+    "product": "act"
+})
+<div class="container">
+    <div class="nd-t pd-t pbg">
+        <div class="t">
+            <div class="nd-pw">
+                <p class="ti tac">LNG车用箱式全撬装</p>
+                <ul class="fib">
+                    <li class="ib">
+                        <div class="share bdsharebuttonbox clearfix">
+                            <p>分享：</p>
+                            <a href="javascript:;" data-cmd="sqq" class="icon iconfont icon-QQ"></a>
+                            <a href="javascript:;" data-cmd="tsina" class="icon iconfont icon-weibo"></a>
+                            <a href="javascript:;" data-cmd="weixin" class="icon iconfont icon-weixin"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nd-pw pd-imgs pd-arrow u-slick">
+            <div class="item"><div class="pai"><img src="img/蒙版组 32.png" alt=""></div></div>
+            <div class="item"><div class="pai"><img src="img/蒙版组 32.png" alt=""></div></div>
+            <div class="item"><div class="pai"><img src="img/蒙版组 32.png" alt=""></div></div>
+        </div>
+        <i class="sj sj-b"></i>
+    </div>
+    <!-- nd-t -->
+    <div class="nd-b nd-pw freeTx">
+        <h4 class="ti tac">主要功能</h4>
+        <div class="func-table">
+            <table>
+                <tr>
+                    <th>卸车</th>
+                    <td>由LNG低温泵或自增压将槽车内LNG卸至储罐内。</td>
+                    <th>增压</th>
+                    <td>将储罐（槽车）内部分LNG通过气化器，气化后注入储罐（槽车）使储罐（槽车）内压力达到加注（卸车）设定值。</td>
+                </tr>
+                <tr>
+                    <th>泄压</th>
+                    <td>当储罐等容器及管道中压力达到设定值时，通过报警开关阀门泄压或者通过安全阀起跳实现泄压。</td>
+                    <th>加液</th>
+                    <td>由LNG低温泵通过LNG加液枪将储罐内LNG加注到车载钢瓶内。</td>
+                </tr>
+                <tr>
+                    <th>加压</th>
+                    <td>将储罐的低压液体通过柱塞泵加压到25MPa。</td>
+                    <th>加液</th>
+                    <td>由LNG低温泵通过LNG加液枪将储罐内LNG加注到车载钢瓶内。</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- nd-b -->
+    <div class="nd-back pd-back pbg">
+        <div class="nd-pw clearfix">
+            <a href="#" class="prev arrow">上一篇</a>
+            <a href="#" class="next arrow">下一篇</a>
+            <a href="news.html" class="back">返回列表页</a>
+        </div>
+    </div>
+</div>
+<!-- container -->
+@@include('./footer.html')
+<script src="js/page.js"></script>
+<script>
+    window._bd_share_config = {
+        common : {
+            bdText : '自定义分享内容', 
+            bdDesc : '自定义分享摘要', 
+            bdUrl : '自定义分享url地址',   
+            bdPic : '自定义分享图片'
+        },
+        share : [{}]
+    }
+    with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+    $(function(){
+        $('.pd-imgs').slick({
+            dots: true
+        });
+    })
+</script>
+</body>
+</html>
