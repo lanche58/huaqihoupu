@@ -1,0 +1,67 @@
+@@include('./top.html')
+</head>
+<body>
+@@include('./header.html',{
+    "contact": "act"
+})
+<div class="container pbg">
+    <div id="map"></div>
+    <div class="cta1 pw2">
+        <div class="ab-title tac">
+            <h3 class="ch">联系我们</h3>
+            <h4 class="en">CONTACT US</h4>
+        </div>
+        <ul class="contact-list clearfix">
+            <li class="item1"><a href="#" class="ma">
+                <p class="nowti"><i class="icon iconfont icon-dizhi"></i>地址</p>
+                <p class="text">四川省成都高新区康隆路555号</p>
+            </a></li>
+            <li><a href="#" class="ma na">
+                <p class="nowti"><i class="icon iconfont icon-dianhua"></i>服务热线</p>
+                <p class="text">86-400-000-2005</p>
+            </a></li>
+            <li class="item1"><a href="#" class="ma">
+                <p class="nowti"><i class="icon iconfont icon-youxiang"></i>公司邮箱</p>
+                <p class="text">86-400-000-2005@sina.com</p>
+            </a></li>
+            <li><div class="ma">
+                <p class="nowti"><i class="icon iconfont icon-mailbox"></i>邮编</p>
+                <p class="text">610036</p>
+            </div></li>
+        </ul>
+    </div>
+    <!-- cta1 -->
+</div>
+<!-- container -->
+@@include('./footer.html')
+<script src="js/page.js"></script>
+<script src="http://api.map.baidu.com/api?v=2.0&ak=7d3a4c6e5e8a70dd200a2eeacf8c1b50"></script>
+<script>
+    $(function(){
+        function ShowMap(zuobiao, showmapInfo, zoom) {
+            var arrzuobiao = zuobiao.split(',');
+                var map = new BMap.Map("map");
+            var point = new BMap.Point(arrzuobiao[0], arrzuobiao[1]);
+            var marker = new BMap.Marker(point, {
+                icon: new BMap.Icon("images/mapi.png", new BMap.Size(76, 76))
+            })
+            map.addOverlay(marker);
+            marker.setAnimation(BMAP_ANIMATION_BOUNCE);
+            map.centerAndZoom(point, zoom);
+            map.disableScrollWheelZoom();
+            var opts = {
+                width: 400
+            }
+            var infoWindow = new BMap.InfoWindow(showmapInfo, opts);
+            marker.addEventListener("click", function () {
+                if (w_width>=641) {
+                    map.openInfoWindow(infoWindow,point);
+                }  
+            });
+        };
+        var k='<p style="font-size: 18px; color: #666;">地址：四川省绵阳市游仙区游仙东路89号</p><p style="font-size: 18px; color: #666;">邮编：621000</p>'; 
+        ShowMap('104.018887,30.723201', k, '17');
+    })
+</script>
+</body>
+</html>

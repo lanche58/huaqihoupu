@@ -1,0 +1,68 @@
+@@include('./top.html')
+</head>
+<body>
+@@include('./header.html',{
+    "job": "act"
+})
+@@include('./pbanner.html',{
+    "img": "100477928.jpg",
+    "ch": "人力资源",
+    "en": "HUMAN RESOURCES"
+})
+<div class="pnav">
+    <ul class="fib">
+        <li class="ib"><a href="job.html">人才招聘</a></li>
+        <li class="ib"><a href="job1.html" class="act">员工风采</a></li>
+    </ul>
+</div>
+<!-- pnav -->
+<div class="container pbg">
+    <div class="ab6 pw2">
+        <ul class="elegant-list clearfix">
+            <li><a href="javascript:;" data-big-num="1" data-big-img="img/蒙版组 17.png" data-title="荣誉" class="scapic">
+                <div class="pai"><img src="img/蒙版组 17.png" alt=""><i class="icon iconfont icon-chakan view-img-btn">查看大图</i></div>
+            </a></li>
+            <li><a href="javascript:;" data-big-num="2" data-big-img="img/蒙版组 17.png" data-title="荣誉" class="scapic">
+                <div class="pai"><img src="img/蒙版组 17.png" alt=""><i class="icon iconfont icon-chakan view-img-btn">查看大图</i></div>
+            </a></li>
+            <li><a href="javascript:;" data-big-num="3" data-big-img="img/蒙版组 17.png" data-title="荣誉" class="scapic">
+                <div class="pai"><img src="img/蒙版组 17.png" alt=""><i class="icon iconfont icon-chakan view-img-btn">查看大图</i></div>
+            </a></li>
+            <li><a href="javascript:;" data-big-num="4" data-big-img="img/蒙版组 17.png" data-title="荣誉" class="scapic">
+                <div class="pai"><img src="img/蒙版组 17.png" alt=""><i class="icon iconfont icon-chakan view-img-btn">查看大图</i></div>
+            </a></li>
+            <li><a href="javascript:;" data-big-num="5" data-big-img="img/蒙版组 17.png" data-title="荣誉" class="scapic">
+                <div class="pai"><img src="img/蒙版组 17.png" alt=""><i class="icon iconfont icon-chakan view-img-btn">查看大图</i></div>
+            </a></li>
+            <li><a href="javascript:;" data-big-num="6" data-big-img="img/蒙版组 17.png" data-title="荣誉" class="scapic">
+                <div class="pai"><img src="img/蒙版组 17.png" alt=""><i class="icon iconfont icon-chakan view-img-btn">查看大图</i></div>
+            </a></li>
+            <li><a href="javascript:;" data-big-num="7" data-big-img="img/蒙版组 17.png" data-title="荣誉" class="scapic">
+                <div class="pai"><img src="img/蒙版组 17.png" alt=""><i class="icon iconfont icon-chakan view-img-btn">查看大图</i></div>
+            </a></li>
+            <li><a href="javascript:;" data-big-num="8" data-big-img="img/蒙版组 17.png" data-title="荣誉" class="scapic">
+                <div class="pai"><img src="img/蒙版组 17.png" alt=""><i class="icon iconfont icon-chakan view-img-btn">查看大图</i></div>
+            </a></li>
+            <li><a href="javascript:;" data-big-num="9" data-big-img="img/蒙版组 17.png" data-title="荣誉" class="scapic">
+                <div class="pai"><img src="img/蒙版组 17.png" alt=""><i class="icon iconfont icon-chakan view-img-btn">查看大图</i></div>
+            </a></li>
+        </ul>
+        @@include('./pager.html')
+    </div>
+    <!-- ab6 -->
+</div>
+<!-- container -->
+@@include('./footer.html')
+<script src="js/page.js"></script>
+<script>
+    $(function(){
+        var elegantLen = $('.elegant-list li').length;
+        $('.elegant-list a').bind(_click, function() {
+            var num = $(this).attr('data-big-num'),
+                $parent = $(this).parents('.elegant-list');
+            openshowImg(num, elegantLen, $parent);
+        });
+    })
+</script>
+</body>
+</html>

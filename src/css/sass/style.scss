@@ -611,3 +611,215 @@
     th{ width: 12%; background: $hc3; font-weight: normal; text-align: center; }
     td{ width: 38%; }
 }
+.pro-list{
+    margin-left: -20px;
+    li{ width: 33.33%; float: left; margin-bottom: 20px; }
+    a{ display: block; position: relative; margin-left: 20px; color: #fff; 
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .pai{
+                    &:before{ @include hide; }
+                    &:after{ @include show; }
+                }
+                .view-img-btn{ transform: none; @include show; }
+            }
+        }
+    }
+    .pai{ padding-bottom: (306 / 386) * 100%; 
+        &:before, &:after{ @include ba; z-index: 9; @include tblr; @include b5; @include mt4; }
+        &:before{ background:linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(0,0,0,0.72) 100%); }
+        &:after{ background: $mc1o2; @include hide;  }
+    }
+    .view-img-btn{ @include plr; z-index: 10; top: 50%; margin-top: -(54px / 2); }
+    .nowti{ @include plr; z-index: 20; bottom: 17px - 5px; padding: 0 5%; text-align: center; font-size: 18px; }
+}
+.ab6 .pro-list{ margin-bottom: 40px; }
+.case-nav{
+    background: $hc2; 
+    ul{ text-align: left; }
+    li{ width: 20%; }
+    a{ display: block; line-height: 40px; white-space: nowrap; text-align: center; overflow: hidden;
+        &:before{ content: ""; @include di; margin: 0 8px (40px - 12px) / 2 0; @include c(12px); border: 3px solid #fff; @include bs; @include mt3; }
+        &.act:before{ border-color: $mc1; }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                &:before{ border-color: $mc1; }
+            }
+        }
+    }
+}
+.case-list{
+    margin-left: -20px; 
+    li{ width: 33.33%; float: left; margin-bottom: 20px; }
+    a{ display: block; background: #fff; margin-left: 20px; 
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .icon{ background: $mc1; }
+            }
+        }
+    }
+    .pai{ padding-bottom: (230 / 387) * 100%; }
+    .txts{ height: 80px; padding: 0 20px; overflow: hidden; }
+    .nowti{ line-height: 80px; font-size: 18px; }
+    .icon{ float: right; margin: (80px - 30px) / 2 0 0 10px; @include c(30px); background: $hc1; font-size: 12px; font-weight: bold; line-height: 30px; text-align: center; color: #fff; @include mt3; }
+}
+.ab6{
+    .case-nav{ margin-bottom: 30px; }
+    .case-list{ margin-bottom: 40px; }
+}
+.down-list{
+    li + li{ margin-top: 15px; }
+    a{ display: block; height: 80px; background: #fff; overflow: hidden; 
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .date, .icon-xiazai{ background: $mc1; }
+                .nowti{ color: $mc1; }
+            }
+        }
+    }
+    .date{ float: left; margin-right: 45px; width: 80px; height: 100%; padding-top: 20px; background: $hc1; font-size: 12px; text-align: center; line-height: 1; color: #fff; @include bs; @include mt3;
+        span{ display: block; }
+        .d{ font-size: 28px; }
+    }
+    .icon-xiazai{ float: right; margin-left: 20px; width: 80px; height: 100%; background: $hc1; line-height: 80px; text-align: center; font-size: 34px; color: #fff; @include mt3; }
+    .nowti{ line-height: 80px; font-size: 18px; @include mt3; 
+        .icon{ @include di; margin-right: 10px; color: $fc3; font-size: 22px; }
+    }
+}
+.ab6 .down-list{ margin-bottom: 60px; }
+.elegant-list{
+    margin-left: -35px;
+    li{ width: 33.33%; float: left; margin-bottom: 35px; }
+    a{ display: block; margin-left: 35px; color: #fff;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .pai:after{ @include show; }
+                .view-img-btn{ transform: none; @include show; }
+            }
+        }
+    }
+    .pai{ padding-bottom: (251 / 378) * 100%; 
+        &:after{ @include ba; @include tblr; @include b5; background: $mc1o2; @include hide; @include mt4; }
+    }
+    .view-img-btn{ @include plr; z-index: 9; top: 50%; margin-top: -(54px / 2); }
+}
+.ab6 .elegant-list{ margin-bottom: 30px; }
+.jb1{
+    background: #fff; padding: 100px 0 90px 0;
+}
+.jb-ti{ position: relative; padding-bottom: 30px; line-height: 1.4; font-size: 30px; 
+    strong{ color: $fc1; }
+    &:before{ @include ba; bottom: 0; left: 50%; margin-left: -(56px / 2); width: 56px; height: 3px; background: $hc1; }
+}
+.job-list{
+    li{
+        + li{ margin-top: 10px; }
+        &:first-child{
+            .t{ color: #fff; font-size: 18px; cursor: default; 
+                > div{ background: $mc1; }
+            }
+        }
+        &.act{
+            .t{ 
+                .add, > div{ background: $mc2; }
+                .add:after{ transform: rotate(90deg); }
+                > div{ color: #fff; }
+            }
+        }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .t{  
+                    .add, > div{ background: $mc2; }
+                    > div{ color: #fff; }
+                } 
+            }
+        }
+    }
+    .t{ overflow: hidden; background: #fff; cursor: pointer;
+        > div{ float: left; position: relative; height: 60px; padding: 0 5px; @include bs; text-align: center; @include mt3;
+            + div{ border-left: 1px solid $hc3; }
+        }
+        .nowti{ line-height: 60px; }
+    }
+    .j1{ width: 38.9%; }
+    .j5, .j4, .j2{ width: 10.8%; }
+    .j3{ width: 21.4%; }
+    .j6{ width: 7.3%; padding: 0 !important; }
+    .b{ padding: 45px 70px 35px 70px; background: #fff; display: none; }
+    .add{ display: block; position: relative; height: 100%; background: $hc1; @include mt3;
+        &:before, &:after{ @include ba; top: 50%; left: 50%; background: #fff; border-radius: 2px; @include mt4; }
+        &:before{ width: 20px; height: 2px; margin: -1px 0 0 -10px; }
+        &:after{ width: 2px; height: 20px; margin: -10px 0 0 -1px; }
+    }
+    .set-email{ color: #fff; }
+}
+.set-email{ display: block; width: 120px; background: $hc1; text-align: center; color: #fff; line-height: 40px; @include mt3;
+    @media screen and (min-width:1025px) {
+        &:hover{ background: $mc1; }
+    }
+}
+.jb2{ padding: 80px 0 100px 0; 
+    .ab-title{ margin-bottom: 40px; }
+    .job-list{ margin-bottom: 60px; }
+}
+.load-more{ @include di; }
+.branch-list{
+    li + li{ margin-top: 15px; }
+    a{ display: block; background: #fff; overflow: hidden; 
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .nowti{ color: $mc1; }
+                .set-email{ background: $mc1; }
+            }
+        }
+    }
+    .picbox{ width: 50%; float: right; }
+    .pai{ padding-bottom: (259 / 600) * 100%; }
+    .txts{ overflow: hidden; padding: 45px 60px 0 60px; }
+    .nowti{ margin-bottom: 10px; font-size: 20px; color: $fc1; @include mt3; }
+    .tx{ margin-bottom: 30px; height: 24px * 2; }
+}
+.ab6 .branch-list{ margin-bottom: 60px; }
+.bra-t{ @include bg; padding-bottom: 110px; 
+    .ti{ margin-bottom: 0; color: #fff; }
+}
+.bra-back{
+    a{ @include bs; border: 2px solid $hc1; 
+        @media screen and (min-width:1025px) {
+            &:hover{
+                border-color: $mc1;
+            }
+        }
+    }
+}
+.bra-link{
+    padding: 40px 0;
+    .ti{ float: left; margin-right: 35px; font-weight: bold; color: $fc1; font-size: 20px; }
+    .lk{ display: block; padding-top: 2px; overflow: hidden; 
+        @media screen and (min-width:1025px) {
+            &:hover{ color: $mc1; text-decoration: underline; }
+        }
+    }
+}
+#map{ height: 700px; border-bottom: 10px solid $mc1; }
+.contact-list{
+    margin-left: -40px; line-height: 24px; font-size: 16px;
+    li{ width: 50%; float: left; margin-bottom: 40px; }
+    .ma{ display: block; padding: 25px 50px; background: #fff; margin-left: 40px; overflow: hidden; }
+    .nowti{ float: left; width: 140px; line-height: 24px; font-size: 20px; font-weight: bold; }
+    .icon{ @include di; width: 30px; font-size: 20px; color: $hc1; @include mt3; }
+    a{
+        @media screen and (min-width:1025px) {
+            &:not(.na):hover{
+                color: $mc1;
+                .icon{ color: $mc1; }
+            }
+        }
+    }
+    .item1{ clear: both; }
+    .text{ overflow: hidden; }
+}
+.cta1{
+    padding: 80px 0 60px 0;
+    .ab-title{ margin-bottom: 40px; }
+}

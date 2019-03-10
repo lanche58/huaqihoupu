@@ -46,7 +46,13 @@
     .sos-box{ margin-top: -250px; }
     .pd-imgs .slick-prev{ left: -100px; }
     .pd-imgs .slick-next{ right: -100px; }
-
+    .case-list .nowti{ font-size: 16px; }
+    .down-list .date{ margin-right: 30px; }
+    .job-list li:first-child .t{ font-size: 16px; }
+    .job-list .b{ padding-left: 50px; padding-right: 50px; }
+    .branch-list .txts{ padding: 30px 40px 0 40px; }
+    #map{ height: 498px; }
+    .contact-list .ma{ padding-right: 35px; padding-left: 35px; }
 }
 @media screen and (max-width:1280px) {
     .header .nav li > a{ padding-left: 8px; padding-right: 8px; }
@@ -131,10 +137,16 @@
     .sos-box{ transform: translateY(-50%); margin: 0; }
     .notice-list .pic{ display: none; }
     .nd-pw{ width: 90%; }
-
-
-
-
+    .pro-list .nowti{ font-size: 16px; }
+    .case-list .icon{ margin-top: 28px; width: 24px; height: 24px; line-height: 24px; font-size: 10px; }
+    .job-list li:first-child .t{ font-size: 14px; }
+    .jb2{ padding-bottom: 90px; }
+    .job-list .b{ padding-left: 5%; padding-right: 5%; }
+    .branch-list .pai{ padding-bottom: 0; height: 220px; }
+    .branch-list .pai img{ object-fit: cover; }
+    .contact-list li{ width: 100%; margin-bottom: 15px; }
+    .cta1{ padding-bottom: 75px; }
+    .contact-list .ma{ padding-right: 5%; padding-left: 5%; }
 }
 @media screen and (max-width:861px) {
     .footer .l{ float: none; padding-top: 0; }
@@ -159,10 +171,22 @@
     .news-list li{ width: 50%; }
     .notice-list a{ padding-left: 25px; padding-right: 25px; }
     .func-table td, .func-table th{ padding: 15px; }
+    .elegant-list li, .case-list li, .pro-list li{ width: 50%; }
+    .job-list .j5{ display: none; }
+    .job-list .j2, .job-list .j4{ width: 13.2%; }
+    .job-list .j3{ width: 23.4%; }
+    .job-list .j1{ width: 40.9%; }
+    .job-list .j6{ width: 9.3%; }
+    .branch-list .txts{ padding-left: 30px; padding-right: 30px; }
 }
 @media screen and (max-width:641px) {
     .hot-news-list .tx{ height: 48px; }
     .ix-link-list .txts{ padding-left: 20px; padding-right: 20px; }
+    .job-list .j4{ display: none; }
+    .job-list .j1{ width: 44.2%; }
+    .job-list .j2{ width: 16.5%; }
+    .job-list .j3{ width: 26.7%; }
+    .job-list .j6{ width: 12.6%; }
 }
 @media screen and (max-width:601px) {
     .footer{ padding: 8.33vw 0; }
@@ -240,13 +264,37 @@
     .nd-b .func-table{ margin-top: 5vw; }
     .func-table{ overflow: hidden; overflow-x: auto; -webkit-overflow-scrolling: touch; }
     .func-table table{ width: 700px; }
-
-
-
-
-
-
-
+    .case-nav{ padding: 10px 5%; }
+    .case-nav li{ width: 33.33%; }
+    .case-nav a{ text-align: left; line-height: 30px; }
+    .case-nav a:before{ margin-bottom: 9px; }
+    .ab6 .down-list{ margin-bottom: 10vw; }
+    .down-list a{ height: 60px; }
+    .down-list .date{ width: 60px; padding-top: 10px; margin-right: 20px; }
+    .down-list .nowti{ line-height: 60px; font-size: 16px; }
+    .down-list .nowti .icon{ font-size: 20px; margin-right: 8px; }
+    .down-list .icon-xiazai{ width: 60px; line-height: 60px; font-size: 28px; }
+    .elegant-list li{ margin-bottom: 5vw; }
+    .elegant-list a{ margin-left: 20px; }
+    .elegant-list{ margin-left: -20px; }
+    .ab6 .elegant-list{ margin-bottom: 5vw; }
+    .jb-ti{ font-size: 24px; padding-bottom: 5vw; }
+    .jb-ti:before{ width: 9.32vw; margin-left: -4.66vw; }
+    .jb1{ padding: 16.67vw 0 15vw 0; }
+    .jb2{ padding: 13.33vw 0 15vw 0; }
+    .jb2 .ab-title{ margin-bottom: 6.67vw; }
+    .jb2 .job-list{ margin-bottom: 10vw; }
+    .job-list .b{ padding-top: 7.5vw; }
+    .branch-list .picbox{ width: 100%; float: none; }
+    .branch-list .pai{ height: auto; padding-bottom: 43.16667%; }
+    .branch-list .txts{ padding: 5vw 5% 30px 5%; }
+    .ab6 .branch-list{ margin-bottom: 10vw; }
+    .bra-t{ padding-bottom: 18.33vw; }
+    .bra-link{ padding: 6.67vw 0; }
+    .cta1{ padding: 13.33vw 0 12.5vw 0; }
+    .cta1 .ab-title{ margin-bottom: 6.67vw; }
+    .contact-list .ma{ padding-top: 4.17vw; padding-bottom: 4.17vw; }
+    #map{ height: 83vw; }
 }
 @media screen and (max-width:481px) {
     .navMobile dd > a{ font-size: 16px; padding-top: 10px; padding-bottom: 10px; }
@@ -306,8 +354,36 @@
     .nd-back .icon{ width: 42px; height: 42px; line-height: 42px; font-size: 14px; }
     .pd-back .arrow{ width: 80px; margin-right: 5px; }
     .pd-back a{ line-height: 50px; }
-
-
-    
-
+    .case-list li{ width: 100%; margin-bottom: 3.33vw; }
+    .case-list .txts{ height: 60px; padding: 0 5%; }
+    .case-list .nowti{ line-height: 60px; }
+    .case-list .icon{ margin-top: 18px; }
+    .ab6 .case-list{ margin-bottom: 6.67vw; }
+    .ab6 .case-nav{ margin-bottom: 5vw; }
+    .down-list .date{ width: 50px; padding-top: 8px; font-size: 10px; margin-right: 10px; }
+    .down-list .date .d{ font-size: 22px; }
+    .down-list a{ height: 50px; }
+    .down-list .nowti{ line-height: 50px; font-size: 14px; }
+    .down-list .nowti .icon{ font-size: 16px; margin-right: 5px; }
+    .down-list .icon-xiazai{ width: 50px; margin-left: 10px; line-height: 50px; font-size: 22px; }
+    .down-list li+li{ margin-top: 10px; }
+    .jb-ti{ font-size: 22px; }
+    .job-list .j2{ display: none; }
+    .job-list .j1{ width: 52.2%; }
+    .job-list .j3{ width: 37.7%; }
+    .job-list .j6{ width: 10.1%; }
+    .job-list .t>div{ height: 50px; }
+    .job-list .t .nowti{ line-height: 50px; }
+    .job-list .t{ font-size: 12px; }
+    .job-list .add:before{ width: 10px; margin-left: -5px; }
+    .job-list .add:after{ height: 10px; margin-top: -5px; }
+    .bra-link .ti{ float: none; margin: 0; font-size: 18px; }
+    .contact-list{ font-size: 14px; }
+    .contact-list .nowti{ font-size: 16px; width: 110px; }
+    .contact-list .icon{ font-size: 18px; width: 25px; }
+}
+@media screen and (max-width:441px) {
+    .pro-list li{ width: 100%; margin-bottom: 3.33vw; }
+    .ab6 .pro-list{ margin-bottom: 6.67vw; }
+    .elegant-list li{ width: 100%; }
 }
