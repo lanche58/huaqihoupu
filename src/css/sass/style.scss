@@ -823,3 +823,41 @@
     padding: 80px 0 60px 0;
     .ab-title{ margin-bottom: 40px; }
 }
+.marketing-map-box{
+    width: 962px; margin: 0 auto;
+}
+.marketing-map{
+    position: relative; color: #fff;
+    img{ display: block; width: 100%; }
+    .dot{ position: absolute; z-index: 9; line-height: 1; 
+        .icon{ @include plr; bottom: 100%; padding-bottom: 2px; text-align: center; font-size: 28px; }
+    }
+    .jl{ top: 194px; right: 89px; }
+    .ln{ top: 256px; right: 121px; }
+    .tj{ top: 313px; right: 208px; }
+    .bj{ top: 292px; right: 232px; }
+    .nmg{ top: 284px; right: 319px; }
+    .hb{ top: 346px; right: 247px; }
+    .sd{ top: 383px; right: 198px; }
+    .sx{ top: 377px; right: 305px; }
+    .nx{ top: 376px; right: 402px; }
+    .gs{ top: 395px; right: 445px; }
+    .sxi{ top: 455px; right: 370px; }
+    .xj{ top: 258px; right: 722px; }
+    .sc{ top: 505px; right: 463px; }
+    .yn{ top: 645px; right: 494px; }
+    .gx{ top: 670px; right: 342px; }
+    .hn{ top: 767px; right: 323px; }
+    .gd{ top: 670px; right: 253px; }
+    .fj{ top: 616px; right: 168px; }
+    .hna{ top: 582px; right: 289px; }
+    .jx{ top: 578px; right: 216px; }
+    .zj{ top: 536px; right: 140px; }
+    .sh{ top: 483px; right: 113px; }
+    .js{ top: 448px; right: 155px; }
+    .ah{ top: 468px; right: 201px; }
+    .hbe{ top: 512px; right: 261px; }
+    .hena{ top: 436px; right: 265px; }
+    .gzh{ top: 595px; right: 385px; }
+}
+.ser1{ padding: 55px 0 50px 0; }

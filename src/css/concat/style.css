@@ -1926,3 +1926,110 @@
   padding: 80px 0 60px 0; }
   .cta1 .ab-title {
     margin-bottom: 40px; }
+
+.marketing-map-box {
+  width: 962px;
+  margin: 0 auto; }
+
+.marketing-map {
+  position: relative;
+  color: #fff; }
+  .marketing-map img {
+    display: block;
+    width: 100%; }
+  .marketing-map .dot {
+    position: absolute;
+    z-index: 9;
+    line-height: 1; }
+    .marketing-map .dot .icon {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 100%;
+      padding-bottom: 2px;
+      text-align: center;
+      font-size: 28px; }
+  .marketing-map .jl {
+    top: 194px;
+    right: 89px; }
+  .marketing-map .ln {
+    top: 256px;
+    right: 121px; }
+  .marketing-map .tj {
+    top: 313px;
+    right: 208px; }
+  .marketing-map .bj {
+    top: 292px;
+    right: 232px; }
+  .marketing-map .nmg {
+    top: 284px;
+    right: 319px; }
+  .marketing-map .hb {
+    top: 346px;
+    right: 247px; }
+  .marketing-map .sd {
+    top: 383px;
+    right: 198px; }
+  .marketing-map .sx {
+    top: 377px;
+    right: 305px; }
+  .marketing-map .nx {
+    top: 376px;
+    right: 402px; }
+  .marketing-map .gs {
+    top: 395px;
+    right: 445px; }
+  .marketing-map .sxi {
+    top: 455px;
+    right: 370px; }
+  .marketing-map .xj {
+    top: 258px;
+    right: 722px; }
+  .marketing-map .sc {
+    top: 505px;
+    right: 463px; }
+  .marketing-map .yn {
+    top: 645px;
+    right: 494px; }
+  .marketing-map .gx {
+    top: 670px;
+    right: 342px; }
+  .marketing-map .hn {
+    top: 767px;
+    right: 323px; }
+  .marketing-map .gd {
+    top: 670px;
+    right: 253px; }
+  .marketing-map .fj {
+    top: 616px;
+    right: 168px; }
+  .marketing-map .hna {
+    top: 582px;
+    right: 289px; }
+  .marketing-map .jx {
+    top: 578px;
+    right: 216px; }
+  .marketing-map .zj {
+    top: 536px;
+    right: 140px; }
+  .marketing-map .sh {
+    top: 483px;
+    right: 113px; }
+  .marketing-map .js {
+    top: 448px;
+    right: 155px; }
+  .marketing-map .ah {
+    top: 468px;
+    right: 201px; }
+  .marketing-map .hbe {
+    top: 512px;
+    right: 261px; }
+  .marketing-map .hena {
+    top: 436px;
+    right: 265px; }
+  .marketing-map .gzh {
+    top: 595px;
+    right: 385px; }
+
+.ser1 {
+  padding: 55px 0 50px 0; }
