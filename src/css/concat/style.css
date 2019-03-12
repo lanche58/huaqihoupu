@@ -1940,8 +1940,9 @@
   .marketing-map .dot {
     position: absolute;
     z-index: 9;
-    line-height: 1; }
-    .marketing-map .dot .icon {
+    line-height: 1;
+    cursor: pointer; }
+    .marketing-map .dot > .icon {
       position: absolute;
       left: 0;
       right: 0;
@@ -1949,6 +1950,13 @@
       padding-bottom: 2px;
       text-align: center;
       font-size: 28px; }
+    .marketing-map .dot.act {
+      color: #C70606;
+      z-index: 20; }
+      .marketing-map .dot.act .map-info {
+        transform: none;
+        opacity: 1;
+        visibility: visible; }
   .marketing-map .jl {
     top: 194px;
     right: 89px; }
@@ -2030,6 +2038,51 @@
   .marketing-map .gzh {
     top: 595px;
     right: 385px; }
+  .marketing-map .map-info {
+    position: absolute;
+    z-index: 99;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -132px;
+    transform: translateY(-20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms;
+    cursor: default; }
 
 .ser1 {
   padding: 55px 0 50px 0; }
+
+.map-info {
+  width: 264px;
+  padding-bottom: 12px;
+  color: #666; }
+  .map-info.hide {
+    display: none; }
+  .map-info .b {
+    position: relative;
+    padding: 20px 35px;
+    border-radius: 20px;
+    background: #fff; }
+  .map-info p {
+    line-height: 24px; }
+    .map-info p + p {
+      margin-top: 4px; }
+  .map-info .icon, .map-info strong {
+    display: inline-block;
+    vertical-align: bottom; }
+  .map-info .icon {
+    width: 25px;
+    color: #ccc; }
+  .map-info strong {
+    width: 65px;
+    font-size: 16px; }
+  .map-info .sj {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    border-top-width: 9px;
+    color: #fff; }

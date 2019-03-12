@@ -147,6 +147,12 @@
     .contact-list li{ width: 100%; margin-bottom: 15px; }
     .cta1{ padding-bottom: 75px; }
     .contact-list .ma{ padding-right: 5%; padding-left: 5%; }
+    .marketing-map-box{ width: 100%; height: 640px; position: relative; }
+    .marketing-map{ position: absolute; top: 50%; left: 50%; margin: -398px 0 0 -481px; width: 962px; height: 796px; transform: scale(.8); }
+    .map-info{ display: block !important; position: fixed; z-index: 299; top: 0; bottom: 0; right: 0; left: 0; padding: 0; width: auto; transition: 400ms; }
+    .map-info.hide{ opacity: 0; visibility: hidden; }
+    .map-info .sj{ display: none; }
+    .map-info .b{ position: absolute; top: 50%; left: 50%; width: 264px; transform: translate(-50%, -50%); box-sizing: border-box; }
 }
 @media screen and (max-width:861px) {
     .footer .l{ float: none; padding-top: 0; }
@@ -178,6 +184,8 @@
     .job-list .j1{ width: 40.9%; }
     .job-list .j6{ width: 9.3%; }
     .branch-list .txts{ padding-left: 30px; padding-right: 30px; }
+    .marketing-map{ transform: scale(.65); }
+    .marketing-map-box{ height: 520px; }
 }
 @media screen and (max-width:641px) {
     .hot-news-list .tx{ height: 48px; }
@@ -295,6 +303,8 @@
     .cta1 .ab-title{ margin-bottom: 6.67vw; }
     .contact-list .ma{ padding-top: 4.17vw; padding-bottom: 4.17vw; }
     #map{ height: 83vw; }
+    .marketing-map{ transform: scale(.55); }
+    .marketing-map-box{ height: 440px; }
 }
 @media screen and (max-width:481px) {
     .navMobile dd > a{ font-size: 16px; padding-top: 10px; padding-bottom: 10px; }
@@ -381,6 +391,8 @@
     .contact-list{ font-size: 14px; }
     .contact-list .nowti{ font-size: 16px; width: 110px; }
     .contact-list .icon{ font-size: 18px; width: 25px; }
+    .marketing-map{ transform: scale(.4); }
+    .marketing-map-box{ height: 320px; }
 }
 @media screen and (max-width:441px) {
     .pro-list li{ width: 100%; margin-bottom: 3.33vw; }

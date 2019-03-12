@@ -829,8 +829,11 @@
 .marketing-map{
     position: relative; color: #fff;
     img{ display: block; width: 100%; }
-    .dot{ position: absolute; z-index: 9; line-height: 1; 
-        .icon{ @include plr; bottom: 100%; padding-bottom: 2px; text-align: center; font-size: 28px; }
+    .dot{ position: absolute; z-index: 9; line-height: 1; cursor: pointer;
+        > .icon{ @include plr; bottom: 100%; padding-bottom: 2px; text-align: center; font-size: 28px; }
+        &.act{ color: $mc4; z-index: 20;
+            .map-info{ transform: none; @include show; }
+        }
     }
     .jl{ top: 194px; right: 89px; }
     .ln{ top: 256px; right: 121px; }
@@ -859,5 +862,18 @@
     .hbe{ top: 512px; right: 261px; }
     .hena{ top: 436px; right: 265px; }
     .gzh{ top: 595px; right: 385px; }
+    .map-info{ position: absolute; z-index: 99; bottom: 100%; left: 50%; margin-left: -(264px / 2); transform: translateY(-20px); @include hide; @include mt3; cursor: default; }
 }
 .ser1{ padding: 55px 0 50px 0; }
+.map-info{
+    width: 264px; padding-bottom: 12px; color: $fc2;
+    &.hide{ display: none; }
+    .b{ position: relative; padding: 20px 35px; border-radius:20px; background: #fff; }
+    p{ line-height: 24px; 
+        + p{ margin-top: 4px; }
+    }
+    .icon, strong{ @include di; }
+    .icon{ width: 25px; color: $hc1; }
+    strong{ width: 65px; font-size: 16px; }
+    .sj{ position: absolute; top: 100%; left: 50%; margin-left: -8px; border-left-width: 8px; border-right-width: 8px; border-top-width: 9px; color: #fff; }
+}
