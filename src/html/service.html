@@ -46,6 +46,7 @@
         <p><i class="icon iconfont icon-wo"></i><strong>负责人</strong><span class="name">黄凌</span></p>
         <p><a href="tel:18508197101" class="na"><i class="icon iconfont icon-shouji"></i><strong>电话</strong><span class="tel">18508197101</span></a></p>
         <span class="sj sj-b"></span>
+        <span class="close"></span>
     </div>
 </div>
 @@include('./footer.html')
@@ -90,6 +91,10 @@
                 $('.map-info').addClass('hide');
                 $('.marketing-map .dot').removeClass('act');
             }
+        });
+        $('.map-info .close').bind(_click, function() {
+            $('.map-info').addClass('hide');
+            $('.marketing-map .dot').removeClass('act');
         });
     })
 </script>
