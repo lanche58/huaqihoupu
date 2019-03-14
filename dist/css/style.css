@@ -722,12 +722,12 @@ a.pswp__share--download:hover{background:#ddd}
 .header .logo .m{display:none}
 .header .nav{float:right;margin-right:5.20833%}
 .header .nav li{float:left;position:relative}
-.header .nav li>a{display:block;position:relative;padding:40px 22px;font-size:15px}
+.header .nav li>a{display:block;position:relative;padding:40px 22px;font-size:15px;font-weight:700}
 .header .nav li>a:before{content:"";position:absolute;z-index:9;bottom:7px;left:50%;margin-left:-3px;width:6px;height:6px;background:#fff;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);opacity:0;visibility:hidden;-webkit-transition:.4s;-moz-transition:.4s;transition:.4s}
 .header .nav li>a.act,.header .nav li>a.act2,.header .nav li>a:hover{background:#306ea7;color:#fff}
 .header .nav li>a.act2:before{bottom:-3px;opacity:1;visibility:visible}
 .header .pull-nav{position:absolute;left:0;right:0;top:100%;padding:15px 0;background:#306ea7;display:none}
-.header .pull-nav a{display:block;padding:5px;text-align:center;line-height:1.4;color:#fff}
+.header .pull-nav a{display:block;padding:7px 5px;text-align:center;line-height:1.4;color:#fff}
 .header .pull-nav a:hover{background:#629ed6}
 .mtop{height:104px}
 .menu-handler{background:#306ea7}
@@ -829,19 +829,19 @@ a.pswp__share--download:hover{background:#ddd}
 .ix-ti{line-height:1.4;font-size:16px;color:#333}
 .ix-ti:before{content:"";margin:0 15px 5px 0;display:inline-block;vertical-align:bottom;width:12px;height:12px;border-radius:100%;border:3px solid #306ea7;-moz-box-sizing:border-box;box-sizing:border-box}
 .ix-news{float:right;width:30.4%}
-.ix-news .in-nav{margin-bottom:40px}
+.ix-news .in-nav{margin-bottom:45px}
 .in-nav li{float:left;cursor:pointer}
 .in-nav li+li{margin-left:40px}
 .in-nav li.act .ix-ti{color:#306ea7}
 @media screen and (min-width:1025px){
 .in-nav li:hover .ix-ti{color:#306ea7}
 }
-.in-list a{display:block;line-height:36px;color:#333;overflow:hidden}
+.in-list a{display:block;line-height:42px;color:#333;font-size:15px;overflow:hidden}
 @media screen and (min-width:1025px){
 .in-list a:hover{color:#306ea7}
 }
-.in-list .date{float:right;margin-left:20px;color:#999;font-size:12px}
-.in-list .nowti{line-height:36px}
+.in-list .date{float:right;margin-left:20px;color:#999;font-size:13px}
+.in-list .nowti{line-height:42px}
 .in-list .nowti:before{content:"";display:inline-block;vertical-align:middle;margin-right:15px;width:4px;height:4px;background:#999}
 .in-list li{display:none}
 .ix1{padding:55px 0 80px 0}
@@ -1268,7 +1268,7 @@ a.pswp__share--download:hover{background:#ddd}
 .marketing-map .gs{top:395px;right:445px}
 .marketing-map .sxi{top:455px;right:370px}
 .marketing-map .xj{top:258px;right:722px}
-.marketing-map .sc{top:505px;right:463px}
+.marketing-map .sc{top:505px;right:463px;color:#c70606}
 .marketing-map .yn{top:645px;right:494px}
 .marketing-map .gx{top:670px;right:342px}
 .marketing-map .hn{top:767px;right:323px}
@@ -1319,8 +1319,8 @@ a.pswp__share--download:hover{background:#ddd}
 .hot-news-list .txts{padding-top:35px}
 .hot-news-list .nowti{padding-bottom:10px;margin-bottom:20px}
 .hot-news-list .tx{margin-bottom:40px}
-.in-list .nowti,.in-list a{line-height:30px}
-.ix-news .in-nav{margin-bottom:20px}
+.in-list .nowti,.in-list a{line-height:36px}
+.ix-news .in-nav{margin-bottom:25px}
 .ix-link-list .about{height:338px;padding-top:30px}
 .ix-link-list .about,.ix-link-list .txts{padding-left:20px;padding-right:20px}
 .ix-link-list .tx{height:72px}
@@ -1381,7 +1381,9 @@ a.pswp__share--download:hover{background:#ddd}
 .hot-news-list .nowti{padding-bottom:6px}
 .hot-news-list .view-more{width:98px}
 .in-list .date{margin-left:10px}
-.in-list .nowti,.in-list a{line-height:28px}
+.in-list .nowti,.in-list a{line-height:32px}
+.in-list a{font-size:14px}
+.ix-news .in-nav{margin-bottom:30px}
 .ix-link-list li{width:50%}
 .ix-link-list li:first-child{width:100%;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5}
 .ix-link-list{border-left:1px solid #e5e5e5}
@@ -1452,6 +1454,7 @@ a.pswp__share--download:hover{background:#ddd}
 .ip-imgs .nowti{display:block}
 .map-info .close{position:absolute;top:8px;right:8px;width:20px;height:20px;background:#306ea7;border-radius:50%;text-align:center;line-height:20px;color:#fff;font-family:iconfont!important;font-size:12px}
 .map-info .close:before{content:"\e653"}
+.ix-news .in-nav{margin-bottom:20px}
 }
 @media screen and (max-width:861px){
 .footer .l{float:none;padding-top:0}
