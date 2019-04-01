@@ -835,6 +835,9 @@
             .map-info{ transform: none; @include show; }
         }
     }
+    .icon{
+        &:after{ @include ba; bottom: 0; left: 50%; margin-left: -10px; width: 20px; height: 10px; border-radius: 50%; background: #fff; animation: light 2s infinite; }
+    }
     .jl{ top: 194px; right: 89px; }
     .ln{ top: 256px; right: 121px; }
     .tj{ top: 313px; right: 208px; }
@@ -847,7 +850,11 @@
     .gs{ top: 395px; right: 445px; }
     .sxi{ top: 455px; right: 370px; }
     .xj{ top: 258px; right: 722px; }
-    .sc{ top: 505px; right: 463px; color: $mc4; }
+    .sc{ top: 505px; right: 463px; 
+        .icon{ color: $mc4; 
+            &:after{ background: $mc4; }
+        }
+    }
     .yn{ top: 645px; right: 494px; }
     .gx{ top: 670px; right: 342px; }
     .hn{ top: 767px; right: 323px; }
@@ -876,4 +883,8 @@
     .icon{ width: 25px; color: $hc1; }
     strong{ width: 65px; font-size: 16px; }
     .sj{ position: absolute; top: 100%; left: 50%; margin-left: -8px; border-left-width: 8px; border-right-width: 8px; border-top-width: 9px; color: #fff; }
+}
+@keyframes light{
+    0%{ opacity: 1; transform: scale(0); }
+    100%{ opacity: 0; transform: scale(3); }
 }

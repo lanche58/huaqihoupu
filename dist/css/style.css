@@ -1256,6 +1256,7 @@ a.pswp__share--download:hover{background:#ddd}
 .marketing-map .dot>.icon{position:absolute;left:0;right:0;bottom:100%;padding-bottom:2px;text-align:center;font-size:28px}
 .marketing-map .dot.act{color:#c70606;z-index:20}
 .marketing-map .dot.act .map-info{-webkit-transform:none;-moz-transform:none;-ms-transform:none;transform:none;opacity:1;visibility:visible}
+.marketing-map .icon:after{content:"";position:absolute;bottom:0;left:50%;margin-left:-10px;width:20px;height:10px;border-radius:50%;background:#fff;-webkit-animation:light 2s infinite;-moz-animation:light 2s infinite;animation:light 2s infinite}
 .marketing-map .jl{top:194px;right:89px}
 .marketing-map .ln{top:256px;right:121px}
 .marketing-map .tj{top:313px;right:208px}
@@ -1268,7 +1269,9 @@ a.pswp__share--download:hover{background:#ddd}
 .marketing-map .gs{top:395px;right:445px}
 .marketing-map .sxi{top:455px;right:370px}
 .marketing-map .xj{top:258px;right:722px}
-.marketing-map .sc{top:505px;right:463px;color:#c70606}
+.marketing-map .sc{top:505px;right:463px}
+.marketing-map .sc .icon{color:#c70606}
+.marketing-map .sc .icon:after{background:#c70606}
 .marketing-map .yn{top:645px;right:494px}
 .marketing-map .gx{top:670px;right:342px}
 .marketing-map .hn{top:767px;right:323px}
@@ -1294,6 +1297,18 @@ a.pswp__share--download:hover{background:#ddd}
 .map-info .icon{width:25px;color:#ccc}
 .map-info strong{width:65px;font-size:16px}
 .map-info .sj{position:absolute;top:100%;left:50%;margin-left:-8px;border-left-width:8px;border-right-width:8px;border-top-width:9px;color:#fff}
+@-webkit-keyframes light{
+0%{opacity:1;-webkit-transform:scale(0);transform:scale(0)}
+100%{opacity:0;-webkit-transform:scale(3);transform:scale(3)}
+}
+@-moz-keyframes light{
+0%{opacity:1;-moz-transform:scale(0);transform:scale(0)}
+100%{opacity:0;-moz-transform:scale(3);transform:scale(3)}
+}
+@keyframes light{
+0%{opacity:1;-webkit-transform:scale(0);-moz-transform:scale(0);transform:scale(0)}
+100%{opacity:0;-webkit-transform:scale(3);-moz-transform:scale(3);transform:scale(3)}
+}
 @media screen and (max-width:1700px){
 .header .nav{margin-right:0}
 .his-list{width:1152px}

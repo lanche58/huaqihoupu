@@ -1959,6 +1959,17 @@
         transform: none;
         opacity: 1;
         visibility: visible; }
+  .marketing-map .icon:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    animation: light 2s infinite; }
   .marketing-map .jl {
     top: 194px;
     right: 89px; }
@@ -1997,8 +2008,11 @@
     right: 722px; }
   .marketing-map .sc {
     top: 505px;
-    right: 463px;
-    color: #C70606; }
+    right: 463px; }
+    .marketing-map .sc .icon {
+      color: #C70606; }
+      .marketing-map .sc .icon:after {
+        background: #C70606; }
   .marketing-map .yn {
     top: 645px;
     right: 494px; }
@@ -2089,3 +2103,11 @@
     border-right-width: 8px;
     border-top-width: 9px;
     color: #fff; }
+
+@keyframes light {
+  0% {
+    opacity: 1;
+    transform: scale(0); }
+  100% {
+    opacity: 0;
+    transform: scale(3); } }
