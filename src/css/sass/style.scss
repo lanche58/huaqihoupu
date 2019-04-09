@@ -637,7 +637,7 @@
 .case-nav{
     background: $hc2; 
     ul{ text-align: left; }
-    li{ width: 20%; }
+    li{ width: 16.66%; }
     a{ display: block; line-height: 40px; white-space: nowrap; text-align: center; overflow: hidden;
         &:before{ content: ""; @include di; margin: 0 8px (40px - 12px) / 2 0; @include c(12px); border: 3px solid #fff; @include bs; @include mt3; }
         &.act:before{ border-color: $mc1; }
@@ -895,4 +895,7 @@
 @keyframes light{
     0%{ opacity: 1; transform: scale(0); }
     100%{ opacity: 0; transform: scale(3); }
+}
+.investor-iframe{
+    display: block; width: 755px + 2px; max-width: 100%; height: 1105px + 2px; margin: 0 auto;
 }
