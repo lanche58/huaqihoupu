@@ -25,11 +25,21 @@
     .hot-news-list .tx{ margin-bottom: 40px; }
     .in-list .nowti, .in-list a{ line-height: 36px; }
     .ix-news .in-nav{ margin-bottom: 25px; }
-    .ix-link-list .about{ height: 338px; padding-top: 30px; }
+    /* 2019/4/18 */
+    /* .ix-link-list .about{ height: 338px; padding-top: 30px; } */
+    .ix-link-list .about{ height: 286px; padding-top: 25px; }
+    .ix-link-list .about .tx{ font-size: 12px; height: 60px; line-height: 20px !important; }
+    .ix-link-list .nowti{ margin-bottom: 10px; }
+    .ia-nums i{ margin-right: 5px; font-size: 30px; }
+    .ia-nums{ font-size: 12px; margin-top: 10px; }
+    .ia-nums p{ margin-top: 18px; }
+    /* 2019/4/18 */
+
+
     .ix-link-list .about, .ix-link-list .txts{ padding-left: 20px; padding-right: 20px; }
     .ix-link-list .tx{ height: 72px; }
     .ix-link-list .txts{ height: 156px; }
-    .ia-nums i{ margin-right: 5px; font-size: 36px; }
+    /* .ia-nums i{ margin-right: 5px; font-size: 36px; } */
     .ip-nav{ width: 340px; margin-right: -500px; }
     .ip-nav .tbc{ padding: 0 60px 0 30px; }
     .ip-nav .icon{ width: 20px; height: 20px; margin-top: -10px; line-height: 20px; right: 25px; }
@@ -94,8 +104,14 @@
     .ix-link-list .tx{ height: 48px; }
     .ix-link-list .txts{ height: 132px; }
     .ix-link-list .about, .ix-link-list .txts{ padding-left: 30px; padding-right: 30px; }
-    .ix-link-list .about{ height: auto; padding-bottom: 30px; }
-    .ix-link-list .about .tx{ height: auto; width: 300px; max-width: 100%; }
+    .ix-link-list .about{ height: auto; padding-bottom: 30px; padding-top: 30px; }/* 增加paddingTop */
+    .ix-link-list .about .tx{ height: auto; width: 300px; max-width: 100%; font-size: 14px; }/* 增加字体 */
+    /* 2019/4/18 */
+    .ia-nums{ font-size: 14px; margin-top: 0; }
+    .ia-nums i{ font-size: 36px; }
+    .ia-nums p{ margin-top: 30px; }
+    .ix-link-list .nowti{ margin-bottom: 13px; }
+    /* 2019/4/18 */
     .ix2 .ip-title{ position: static; margin-bottom: 50px; color: #999; }
     .ip-nav{ display: none; }
     .ip-imgs .slick-dots{ width: 35%; padding-right: 5%; left: auto; bottom: 20px; text-align: right; box-sizing: border-box; display: block !important; }

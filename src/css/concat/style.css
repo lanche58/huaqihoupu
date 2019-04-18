@@ -441,12 +441,13 @@
       transform: translateY(-20px); } }
 
 .ix-link-list .pai {
-  padding-bottom: 54.7619%; }
+  padding-bottom: 85.91549%; }
 
 .ix-link-list .txts {
   height: 132px;
   padding: 20px 30px 0 30px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  display: none; }
 
 .ix-link-list .nowti {
   margin-bottom: 13px;
