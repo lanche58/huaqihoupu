@@ -441,21 +441,20 @@
       transform: translateY(-20px); } }
 
 .ix-link-list .pai {
-  padding-bottom: 85.91549%; }
+  padding-bottom: 70.42254%; }
 
 .ix-link-list .txts {
-  height: 132px;
+  height: 65px;
   padding: 20px 30px 0 30px;
-  box-sizing: border-box;
-  display: none; }
+  box-sizing: border-box; }
 
 .ix-link-list .nowti {
-  margin-bottom: 13px;
   color: #306ea7;
   font-size: 18px; }
 
 .ix-link-list .tx {
-  height: 48px; }
+  height: 48px;
+  display: none; }
 
 .ix-link-list .about {
   height: 366px;

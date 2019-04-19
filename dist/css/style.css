@@ -852,10 +852,10 @@ a.pswp__share--download:hover{background:#ddd}
 @media screen and (min-width:1025px){
 .ix-link-list a:hover{-webkit-transform:translateY(-20px);-moz-transform:translateY(-20px);-ms-transform:translateY(-20px);transform:translateY(-20px)}
 }
-.ix-link-list .pai{padding-bottom:85.91549%}
-.ix-link-list .txts{height:132px;padding:20px 30px 0 30px;-moz-box-sizing:border-box;box-sizing:border-box;display:none}
-.ix-link-list .nowti{margin-bottom:13px;color:#306ea7;font-size:18px}
-.ix-link-list .tx{height:48px}
+.ix-link-list .pai{padding-bottom:70.42254%}
+.ix-link-list .txts{height:65px;padding:20px 30px 0 30px;-moz-box-sizing:border-box;box-sizing:border-box}
+.ix-link-list .nowti{color:#306ea7;font-size:18px}
+.ix-link-list .tx{height:48px;display:none}
 .ix-link-list .about{height:366px;padding:40px 30px 0 30px;background:url(../images/bg.jpg) no-repeat;background-size:cover;-moz-box-sizing:border-box;box-sizing:border-box;color:#c5dae5}
 .ix-link-list .about .nowti{color:#fff}
 .ix-link-list .about .tx{height:72px}
@@ -1347,13 +1347,12 @@ a.pswp__share--download:hover{background:#ddd}
 .ix-news .in-nav{margin-bottom:25px}
 .ix-link-list .about{height:286px;padding-top:25px}
 .ix-link-list .about .tx{font-size:12px;height:60px;line-height:20px!important}
-.ix-link-list .nowti{margin-bottom:10px}
 .ia-nums i{margin-right:5px;font-size:30px}
 .ia-nums{font-size:12px;margin-top:10px}
 .ia-nums p{margin-top:18px}
 .ix-link-list .about,.ix-link-list .txts{padding-left:20px;padding-right:20px}
 .ix-link-list .tx{height:72px}
-.ix-link-list .txts{height:156px}
+.ix-link-list .txts{height:51px;padding-top:13px}
 .ip-nav{width:340px;margin-right:-500px}
 .ip-nav .tbc{padding:0 60px 0 30px}
 .ip-nav .icon{width:20px;height:20px;margin-top:-10px;line-height:20px;right:25px}
@@ -1416,14 +1415,12 @@ a.pswp__share--download:hover{background:#ddd}
 .ix-link-list li:first-child{width:100%;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5}
 .ix-link-list{border-left:1px solid #e5e5e5}
 .ix-link-list .tx{height:48px}
-.ix-link-list .txts{height:132px}
 .ix-link-list .about,.ix-link-list .txts{padding-left:30px;padding-right:30px}
 .ix-link-list .about{height:auto;padding-bottom:30px;padding-top:30px}
 .ix-link-list .about .tx{height:auto;width:300px;max-width:100%;font-size:14px}
 .ia-nums{font-size:14px;margin-top:0}
 .ia-nums i{font-size:36px}
 .ia-nums p{margin-top:30px}
-.ix-link-list .nowti{margin-bottom:13px}
 .ix2 .ip-title{position:static;margin-bottom:50px;color:#999}
 .ip-nav{display:none}
 .ip-imgs .slick-dots{width:35%;padding-right:5%;left:auto;bottom:20px;text-align:right;-moz-box-sizing:border-box;box-sizing:border-box;display:block!important}
@@ -1654,8 +1651,7 @@ a.pswp__share--download:hover{background:#ddd}
 .ix-link-list li+li{margin-top:5vw}
 .ix-link-list{border:none}
 .ix-link-list .tx{height:auto}
-.ix-link-list .txts{height:auto;padding-bottom:20px}
-.ix-link-list .nowti{margin-bottom:2.17vw}
+.ix-link-list .txts{height:auto;padding-top:20px;padding-bottom:20px}
 .ix-link-list a{border:1px solid #e5e5e5}
 .ix-link-list li:first-child{border:none}
 .ix4{padding:10vw 0}

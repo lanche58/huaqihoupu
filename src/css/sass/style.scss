@@ -215,11 +215,12 @@
             }
         }
     }
-    .pai{ padding-bottom: (366 / 426) * 100%; }
-    // 客户要求隐藏txts
-    .txts{ height: 132px; padding: 20px 30px 0 30px; @include bs; display: none; } 
-    .nowti{ margin-bottom: 24px - 11px; color: $mc1; font-size: 18px; }
-    .tx{ height: 24px * 2; }
+    .pai{ padding-bottom: (300 / 426) * 100%; }
+    .txts{ height: 65px; padding: 20px 30px 0 30px; @include bs;  } 
+    // 去掉margin
+    .nowti{ color: $mc1; font-size: 18px; }
+    // 客户要求隐藏tx
+    .tx{ height: 24px * 2; display: none; }
     .about{ height: 366px; padding: 40px 30px 0 30px; background: url(../images/bg.jpg) no-repeat; background-size: cover; @include bs; color: $mc3; 
         .nowti{ color: #fff; } 
         .tx{ height: 24px * 3; }
