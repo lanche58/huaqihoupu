@@ -1321,20 +1321,21 @@ a.pswp__share--download:hover{background:#ddd}
 @media screen and (max-width:1700px){
 .header .nav{margin-right:0}
 .his-list{width:1152px}
+.header .nav li>a{padding-left:16px;padding-right:16px}
 }
 @media screen and (max-width:1600px){
 .header .logo{margin-left:2%}
-.header .nav li>a{padding-left:16px;padding-right:16px}
 .his-list .slick-prev{left:-117px}
 .his-list .slick-next{right:-117px}
+.header .nav li>a{padding-left:12px;padding-right:12px}
 }
 @media screen and (max-width:1440px){
 .header,.mtop{height:84px}
 .header .logo{margin-top:10px}
-.header .nav li>a{padding:30px 12px}
+.header .nav li>a{padding:30px 8px}
 }
 @media screen and (max-width:1366px){
-.header .nav li>a{font-size:14px;padding-left:10px;padding-right:10px}
+.header .nav li>a{font-size:13px;padding-left:8px;padding-right:8px}
 .header .pull-nav{width:88px;left:50%;margin-left:-44px;right:auto}
 .header .nav li>a.act,.header .nav li>a.act2,.header .nav li>a:hover{background:0 0;color:#306ea7}
 .header .nav li>a.act2:before{background:#306ea7}
@@ -1376,9 +1377,10 @@ a.pswp__share--download:hover{background:#ddd}
 .branch-list .txts{padding:30px 40px 0 40px}
 #map{height:498px}
 .contact-list .ma{padding-right:35px;padding-left:35px}
+.header .logo{margin-left:1.5%}
 }
 @media screen and (max-width:1280px){
-.header .nav li>a{padding-left:8px;padding-right:8px}
+.header .nav li>a{padding-left:6px;padding-right:6px}
 .his-list .slick-prev{left:-77px}
 .his-list .slick-next{right:-77px}
 }
